@@ -1,0 +1,15 @@
+{
+    "python.analysis.extraPaths": [
+        "./Transpo-sort-main"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.defaultInterpreterPath": "C:/Users/User/PycharmProjects/PythonProject3/.venv/Scripts/python.exe"
+}
