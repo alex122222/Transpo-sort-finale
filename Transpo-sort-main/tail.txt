@@ -1,0 +1,40 @@
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0093c53ac55569ac68bb3b6c0246d8ea.setIcon(icon_2743416b4de04a71a7970ad8f05f820b);
+            
+    
+            var marker_534618775b72bfb010e2636e82a2383a = L.marker(
+                [42.1555885, 24.7111418],
+                {
+}
+            ).addTo(map_74c09c50c2e2853389e459e2ee1cdb62);
+        
+    
+            var icon_fb56e0661d98f766789971b20d79c796 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_534618775b72bfb010e2636e82a2383a.bindTooltip(
+                `<div>
+                     Proposed Stop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_534618775b72bfb010e2636e82a2383a.setIcon(icon_fb56e0661d98f766789971b20d79c796);
+            
+</script>
+</html>
