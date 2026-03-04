@@ -1,0 +1,26 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.idea/
+.vscode/
+
+# Generated outputs
+outputs/
+*.html
+
+# GIS rasters / big files
+*.tif
+*.tiff
+*.vrt
+
+# OS junk
+.DS_Store
+Thumbs.db
