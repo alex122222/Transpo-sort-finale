@@ -10,3 +10,5 @@ scipy
 ortools
 pyproj
 pandas
+rioxarray
+rasterio
