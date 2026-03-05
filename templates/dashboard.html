@@ -200,26 +200,25 @@
         <h1>Transpo-Sort <span>AI</span></h1>
 
         <div class="control-group">
-            <p style="font-size: 0.8rem; color: var(--text-light); margin: 0;">1. Use the square icon on map to draw
-                your area.</p>
-            <p style="font-size: 0.8rem; color: var(--text-light); margin: 0;">2. Adjust settings & generate.</p>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin: 0;">1. Използвайте квадратната икона на картата, за да очертаете вашата зона.</p>
+            <p style="font-size: 0.8rem; color: var(--text-light); margin: 0;">2. Настройте параметрите и генерирайте.</p>
         </div>
 
         <div class="control-group">
-            <label>City Layout</label>
+            <label>Градско разпределение</label>
             <div class="radio-group">
                 <label class="radio-label">
-                    <input type="radio" name="layout" value="grid" checked> Grid
+                    <input type="radio" name="layout" value="grid" checked> Мрежа
                 </label>
                 <label class="radio-label">
-                    <input type="radio" name="layout" value="organic"> Organic
+                    <input type="radio" name="layout" value="organic"> Органичен
                 </label>
             </div>
         </div>
 
         <div class="control-group">
             <label>
-                Number of Stops
+                Брой спирки
                 <span id="stops-val">12</span>
             </label>
             <input type="range" id="stops-slider" min="1" max="50" value="12"
@@ -236,16 +235,16 @@
         </div>
 
         <button onclick="runOptimization()" id="optimize-btn">
-            <span id="btn-text">Generate Selection</span>
+            <span id="btn-text">Генерирай</span>
             <div class="loader" id="loader"></div>
         </button>
 
         <button onclick="downloadGeoJSON()" id="download-btn" style="display: none; background-color: #10b981;">
-            <span>Download GeoJSON</span>
+            <span>Изтегли GeoJSON</span>
         </button>
 
         <div class="stats-card">
-            <span class="stat-label">Avg Walking Distance</span>
+            <span class="stat-label">Средна пешеходна дистанция</span>
             <div class="stat-value" id="avg-dist">-- m</div>
         </div>
     </div>
