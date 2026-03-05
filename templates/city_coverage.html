@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Coverage Engine - Transpo-Sort AI</title>
+    <title>Система за оптимизация на покритието на града – Transpo-Sort AI</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -244,7 +244,7 @@
             Back to Hub
         </a>
 
-        <h1>City Coverage <span>Engine</span></h1>
+        <h1>Градско покритие <span>Система</span></h1>
 
         <form id="engine-form">
             <div class="form-group">
@@ -257,34 +257,34 @@
 
             <div class="form-group">
                 <label>
-                    Max Walk Distance (m)
-                    <span class="helper-text">Cost threshold</span>
+                    Максимална ходова дистанция (m)
+                    <span class="helper-text">Праг</span>
                 </label>
                 <input type="number" id="walk_distance_m" value="600" min="100" max="2000" required>
             </div>
 
             <div class="form-group">
                 <label>
-                    Min Stop Spacing (m)
-                    <span class="helper-text">Between stops</span>
+                    Минимална дистанция  (m)
+                    <span class="helper-text">между спирките</span>
                 </label>
                 <input type="number" id="min_stop_distance_m" value="300" min="50" max="1000" required>
             </div>
 
             <div class="form-group">
                 <label>
-                    Candidate Stops
-                    <span class="helper-text">Max evaluated</span>
+                    Кандидати за спирки
+                    <span class="helper-text">Максимално оценени</span>
                 </label>
                 <input type="number" id="num_candidate_points" value="180" min="10" max="500" required>
             </div>
 
             <button type="submit" id="submit-btn">
-                Run Optimizer Engine
+                Започни
             </button>
             <button type="button" id="download-btn" style="display: none; background-color: #3b82f6; margin-top: 10px;"
                 onclick="downloadMap()">
-                Download Map HTML
+                Изтегли карта
             </button>
             <div id="error-box" class="error-message"></div>
         </form>
@@ -293,17 +293,17 @@
     <div class="map-area">
         <div class="empty-state" id="empty-state">
             <div class="empty-icon">🗺️</div>
-            <h3>Ready to Execute</h3>
-            <p>Adjust the parameters and click "Run Optimizer Engine" to generate the city-wide density and optimal
-                stops map.</p>
+            <h3>Готово за изпълнение</h3>
+            <p>Настройте параметрите и натиснете „Стартирай оптимизацията“, за да генерирате карта на гъстотата за целия град и
+                оптималните спирки.</p>
         </div>
 
         <iframe id="result-frame" src=""></iframe>
 
         <div class="loading-overlay" id="loader">
             <div class="spinner"></div>
-            <div class="loading-text">Processing Population Density...</div>
-            <div class="loading-sub">Solving Facility Location via MCLP & P-Median. This may take a minute.</div>
+            <div class="loading-text">Изчисляване на гъстотата на населението...</div>
+            <div class="loading-sub">Решаване на задачата за разполагане на съоръжения (MCLP и P-Median). Това може да отнеме около минута.</div>
         </div>
     </div>
 
