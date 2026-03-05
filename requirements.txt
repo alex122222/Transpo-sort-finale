@@ -12,3 +12,4 @@ pyproj
 pandas
 rioxarray
 rasterio
+tqdm
